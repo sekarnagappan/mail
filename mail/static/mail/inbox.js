@@ -248,7 +248,7 @@ function send_mail(url) {
           .then(result => {
             console.log(`Response Message: ${result.message}`)
             alert(`Response Message: ${result.message}`);
-            load_mailbox('inbox');
+            load_mailbox('sent');
             return Promise.resolve(true);
           });
       } else {
